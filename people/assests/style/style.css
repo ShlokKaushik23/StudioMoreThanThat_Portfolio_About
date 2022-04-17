@@ -97,15 +97,16 @@
 .container .section{
     height: 100%;
     width: 100%;
+    display: block;
 }
 .container.line{
     margin-bottom: 0.2rem;
 
 }
 .container .section .section_zero{
-    display: block;
+    /* display: block; */
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 .container .section .section_zero .main{
     height: 100%;
@@ -1187,8 +1188,6 @@
     height: 1rem;
     margin: 0 0.5%;
     margin-top: 5px;
-    
-
 }
 .container .section .contact_container p a {
     color: #010101;    
@@ -1359,7 +1358,11 @@
         height: 100%;
         width: 100%;
         background-color: #ffff;
-        position: relative;
+        /* position: relative; */
+        overflow-x: hidden;
+    }
+    .container.line{
+        margin-bottom: 0%;
     }
     
     .container .section{
@@ -1368,12 +1371,13 @@
         margin: 0;
         padding: 0;
         outline-style:none;
+        
 
     }
 
     /* ======= Portfolio Main : Screen 1   ===== */
     .container .section .section_zero {
-        /* position:relative; */
+        position:relative;
     }
     .container .section .section_zero .main .portfolio_details{
         margin: 5% 0 0 5%;
@@ -1498,7 +1502,7 @@
 
  
     .container .section .section_one{
-        margin-top: 240%;
+        /* margin-top: 240%; */
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -1527,35 +1531,7 @@
     }
      
 
-    /* ======= section_two grid ============= */
-    .container .section .section_one{
-        margin-top: 240%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-    }
 
-    .container .section .section_one .right_section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        padding: 0%;
-        margin: 0%;
-        height: 100vh;
-    }
-    .container .section .section_one .right_section .right_section_container .full_img{
-        height: auto;
-        width: 780px;
-    }
-    .container .section .section_one .right_section .right_section_container .full_img img{
-        /* border: 2px solid #000;
-        padding: 2%;
-        object-fit: cover; */
-    }
     
     .container .section .section_one .left_section{
         display: flex;
@@ -1563,6 +1539,7 @@
         width: 100%;
         align-items: center;
         margin-top: 0%;
+        margin-bottom: 10%;
         /* padding-left: 10%; */
     }
     .container .section .section_one .left_section .left_section_container .project_details{
@@ -1581,6 +1558,15 @@
          font-size: 200%;
          margin: 0;
      }
+     .container .section .section_one .left_section .left_section_container .project_details p{
+        font-size: 200%;
+        width: 100%;
+    }
+     .container .section .section_one .left_section .left_section_container .project_details .project_brief{
+        font-size: 200%;
+        margin: 0;
+        width: 100vw;
+    }
      .container .section .section_one .left_section .left_section_container .project_image{
         padding: 0px 12%;
         margin: 0;
@@ -1664,9 +1650,13 @@
     .container .section .section_two .left_section .left_section_container .gallery_container .galleryfour .gallery_img {
         height: 150px;
         width: 150px;
-        margin: 20px;
+        margin: 10px;
     }
 
+
+   /* ========== Section One Flip ============ */
+
+   
 
     /* ============= Project 2 : Temple of Chroma | Grid ============ */
 
@@ -1693,6 +1683,23 @@
         height: auto;
         width: 780px;
     }
+    .container .section .section_two.gridone .right_section {
+        height: 100%;
+    }
+    
+
+    .container .section .section_two.gridone .right_section .right_section_container .section_video{
+        height: 540px;
+        width: 100vw;
+        padding: 0 12%;
+        margin: 0;  
+    } 
+    .container .section .section_two.gridone .right_section .right_section_container .section_video iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+
     .container .section .section_two.grid .right_section .right_section_container .full_img img{
         /* border: 2px solid #000;
         padding: 2%;
@@ -1740,14 +1747,270 @@
     .container .section .section_two.grid .left_section .left_section_container .gallery_container .galleryfive .gallery_img {
         height: 150px;
         width: 150px;
-        margin: 20px;
+        margin: 10px;
     }
 
 
+    .container .section .section_two .left_section .left_section_container .gallery_container .gallery{
+        display: flex;
+        width: 100%;
+        margin: 10% 0;
+    }
+    .container .section .section_two .left_section .left_section_container .gallery_container .gallery .gallery_img {
+        height: 150px;
+        width: 150px;
+        margin: 10px;
+    }
+
+    .container .section .section_two .left_section .left_section_container .gallery_container .gallerysix{
+        display: flex;
+        width: 100%;
+        margin: 10% 0;
+    }
+    .container .section .section_two .left_section .left_section_container .gallery_container .gallerysix .gallery_img {
+        height: 150px;
+        width: 150px;
+        margin: 10px;
+    }
+
+    .container .section .section_two .left_section .left_section_container .gallery_container .gallerythree{
+        display: flex;
+        width: 100%;
+        margin: 10% 0;
+    }
+    .container .section .section_two .left_section .left_section_container .gallery_container .gallerythree .gallery_img {
+        height: 150px;
+        width: 150px;
+        margin: 10px;
+    }
+    
+    /* ======== Project : A whereness || Section one Flip ============== */
+
+    .container .section .section_one.flip{
+        display: flex;
+        flex-direction: column;
+    }
+    .container .section .section_one.flip .left_section {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container .section .section_one.flip .left_section .left_section_container{
+        padding: 0;
+        margin: 10% 0;
+        
+    }
+
+    
+    .container .section .section_one.flip .left_section .left_section_container .project_img_desc{
+        padding: 0% 12% 0% 12%;
+        height: 100%;
+        display: block;
+    }
+  
+    .container .section .section_one.flip .left_section .left_section_container .project_img_desc p{
+        font-size: 200%;
+        width: 100%;
+    }
+    
+    .container .section .section_one.flip .right_section{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10%;
+    }
+
+
+    /* ===== Project : Ticklish Fruits || Section Bottom || Section_two Three ========= */
+
+    .container .section .section_two.three{
+        display: flex;
+        flex-direction: column;
+        /* margin: 5% 0; */
+        padding: 0;
+    }
+
+    .container .section .section_two.three .right_section .right_section_container{
+        margin: 0;
+        padding: 0;
+        height: auto;
+        width: 100%;
+    }
+    .container .section .section_two.three .right_section .right_section_container .portrait_section{
+        width: 780px;
+        height: 100%;
+        padding: 0;
+        margin: 10% 0%;
+    }
+
+
+    .container .section .section_two.three .middle_section{
+        margin-bottom: 10%;
+    }
+ 
+    .container .section .section_two.three .middle_section .middle_section_container.three .gallery_container .gallery_img{
+        width: 150px;
+        height: 150px;
+    }
+
+
+    /* =========== Project : Fcil Espresso Bar || Section Four || Landscape, Portfrait Img ======== */
+
+    .container .section .section_three{
+        /* margin-top: 240%; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .container .section .section_three .right_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0%;
+        margin: 10% 0;
+        height: 100%;
+    }
+    .container .section .section_three .right_section .right_section_container .full_img{
+        height: auto;
+        width: 780px;
+    }
+
+
+     
+    .container .section .section_three .left_section{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        margin-top: 0%;
+        margin-bottom: 10%;
+        /* padding-left: 10%; */
+    }
+    .container .section .section_three .left_section .left_section_container .project_details{
+        padding: 0% 0% 5% 12%;
+    }
     
 
-  
+    .container .section .section_three .left_section .left_section_container .project_details .project_category{
+        font-size: 150%;
+        
+     }
+     .container .section .section_three .left_section .left_section_container .project_details .project_title{
+         font-size: 450%;
+     }
+     .container .section .section_three .left_section .left_section_container .project_details .project_desc{
+         font-size: 200%;
+         margin: 0;
+     }
+     .container .section .section_three .left_section .left_section_container .project_details p{
+        font-size: 200%;
+        width: 100%;
+    }
+     .container .section .section_three .left_section .left_section_container .project_details .project_brief{
+        font-size: 200%;
+        margin: 0;
+        width: 100vw;
+    }
+     .container .section .section_three .left_section .left_section_container .project_image{
+        padding: 0px 12%;
+        margin: 0;
+    }
+
+    .container .section .section_three .middle_section {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10%;
+    }
+    .container .section .section_three .middle_section .middle_section_container{
+        width: 100%;
+        height: 100%;
+    }
+
+    .container .section .section_three .middle_section .middle_section_container .gallery_container .galleryeight{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        /* margin: 10px; */
+    }
+    .container .section .section_three .middle_section .middle_section_container .gallery_container .galleryeight .gallery_img{
+        margin: 10px;
+        width: 150px;
+        height: 150px;
+    }
+
+
+    /* ======== Project:   India International ========= */
+
+
+    .container .section .section_two.grid.land .right_section .right_section_container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
     
+    }
+    .container .section .section_two.grid .right_section .right_section_container .landscape_image{
+        width: 760px;
+        height: 100%;
+    }
+
+    .container .section .section_two.grid .right_section .right_section_container .landscape_image img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .container .section .section_two .left_section .left_section_container .gallery_container .galleryseven{
+        display: flex;
+        width: 100%;
+        margin: 10% 0;
+    }
+    .container .section .section_two .left_section .left_section_container .gallery_container .galleryseven .gallery_img {
+        height: 150px;
+        width: 150px;
+        margin: 10px;
+    }
+
+ /* ========= CONTACT SECTION ============ */
+
+.container .section .contact_container h1{
+    font-size: 400%;
+}
+.container .section .contact_container h2{
+    font-size: 250%;
+}
+.container .section .contact_container .website{
+    font-size: 400%;
+}
+.container .section .contact_container p{
+    font-size: 200%;
+}
+    
+.container .section .contact_container .call svg{
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.5%;
+    margin-top: 5px;
+}
+
+.container .section .contact_container .social_media_icons a svg {
+    color: #505050;
+    border: 2px solid #505050;
+    padding: 10px;
+    border-radius: .4rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+
 }
 
 
@@ -1869,7 +2132,7 @@
 
     .container .section .section_one{
     
-        margin-top: 220%;
+        margin-top: 0%;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -1886,6 +2149,13 @@
         height: 400px;
     } 
 
+    .container .section .section_two.gridone .right_section .right_section_container .section_video{
+        height: 400px;
+        width: 100vw;
+        padding: 0 12%;
+        margin: 0;  
+    } 
+
 
     .container .section .section_one .left_section .left_section_container .project_details .project_category{
         font-size: 100%;
@@ -1899,6 +2169,9 @@
          margin: 0;
      }
  
+     .container .section .section_one .left_section .left_section_container .project_details .project_brief{
+        font-size: 150%;
+    }
 
     .container .section .section_two .middle_section .middle_section_container .section_desc{
         font-size: 100%;
@@ -1912,7 +2185,24 @@
     .container .section .section_two .left_section .left_section_container .gallery_container{
         margin: 2% 0;
     } 
+
+    .container .section .section_two .left_section .left_section_container .gallery_container .gallery .gallery_img {
+        height: 100px;
+        width: 100px;
+    }
+    .container .section .section_two .left_section .left_section_container .gallery_container .gallerythree .gallery_img {
+        height: 100px;
+        width: 100px;
+    }
     .container .section .section_two .left_section .left_section_container .gallery_container .galleryfour .gallery_img {
+        height: 100px;
+        width: 100px;
+    }
+    .container .section .section_two .left_section .left_section_container .gallery_container .galleryfive .gallery_img {
+        height: 100px;
+        width: 100px;
+    }
+    .container .section .section_two .left_section .left_section_container .gallery_container .gallerysix .gallery_img {
         height: 100px;
         width: 100px;
     }
@@ -1928,6 +2218,122 @@
             height: 100px;
             width: 100px;
         }
+
+          /* ======== Project : A whereness || Section one Flip ============== */
+
+    .container .section .section_one.flip{
+        display: flex;
+        flex-direction: column;
+    }
+    .container .section .section_one.flip .left_section {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container .section .section_one.flip .left_section .left_section_container{
+        padding: 0;
+        margin: 10% 0;
+        
+    }
+
+    
+    .container .section .section_one.flip .left_section .left_section_container .project_img_desc{
+        padding: 0% 12% 0% 12%;
+        height: 100%;
+        display: block;
+    }
+  
+    .container .section .section_one.flip .left_section .left_section_container .project_img_desc p{
+        font-size: 150%;
+        width: 100%;
+    }
+
+   /* =========== Project: Ticklish Fruits Section Two Three =========== */
+
+    .container .section .section_two.three .right_section .right_section_container .portrait_section{
+        width: 580px;
+        height: 100%;
+        padding: 0;
+        margin: 10% 0%;
+    }
+
+ 
+    .container .section .section_two.three .middle_section .middle_section_container.three .gallery_container .gallery_img{
+        width: 100px;
+        height: 100px;
+    }
+
+    /* =========== Project: Fcil ========= */
+    .container .section .section_three .right_section .right_section_container .full_img{
+        height: auto;
+        width: 560px;
+    }
+    .container .section .section_three .left_section .left_section_container .project_details .project_category{
+        font-size: 100%;
+        
+     }
+     .container .section .section_three .left_section .left_section_container .project_details .project_title{
+         font-size: 350%;
+     }
+     .container .section .section_three .left_section .left_section_container .project_details .project_desc{
+         font-size: 150%;
+         margin: 0;
+     }
+      
+
+
+    .container .section .section_three .middle_section .middle_section_container .gallery_container .galleryeight .gallery_img{
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+    }
+
+   /* ====== Project: India International ====== */
+   .container .section .section_two.grid .right_section .right_section_container .landscape_image{
+    width: 560px;
+    height: 100%;
+    padding: 0;
+}
+
+.container .section .section_two .left_section .left_section_container .gallery_container .galleryseven .gallery_img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+
+
+     /* ========= CONTACT SECTION ============ */
+
+.container .section .contact_container h1{
+    font-size:300%;
+}
+.container .section .contact_container h2{
+    font-size: 200%;
+}
+.container .section .contact_container .website{
+    font-size: 250%;
+}
+.container .section .contact_container p{
+    font-size: 150%;
+}
+    
+.container .section .contact_container .call svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 1%;
+    margin-top: 5px;
+}
+
+.container .section .contact_container .social_media_icons a svg {
+    color: #505050;
+    border: 2px solid #505050;
+    padding: 10px;
+    border-radius: .4rem;
+    width: 4rem;
+    height: 4rem;
+}
     
 
 }
@@ -2031,12 +2437,6 @@
     }
 
 
-    .container .section .section_content .right_section .portfolio_image img{ 
-        border: 1px solid #000;
-        padding: 2%;
-        object-fit: cover;
-    }
-
 
 
         /* ===== Project : Spoonfed, Screen 3 : Section: One and Two ========== */
@@ -2044,7 +2444,7 @@
 
         .container .section .section_one{
     
-            margin-top: 265%;
+            margin-top: 0%;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -2067,19 +2467,27 @@
             font-size: 80%;
             margin: 0;
         }
+        .container .section .section_one .left_section .left_section_container .project_details .project_brief{
+            font-size: inherit;
+            margin: 0;
+        }
         .container .section .section_one .right_section .right_section_container .full_img{
             width: 100%;
             padding: 5%;
         }
-        
+        .container .section .section_two.gridone .right_section .right_section_container .section_video{
+            height: 250px;
+            width: 100vw;
+            padding: 0 5%;
+            margin: 0;  
+        } 
+
         .container .section .section_two .left_section .left_section_container .gallery_container .galleryfour{
             width: 100%;
             display: flex;
             flex-flow: wrap;
             flex: 1 1;
-
             justify-content: space-around;
-
         }
         .container .section .section_two .left_section .left_section_container .gallery_container .galleryfour .gallery_img {
             height: 70px;
@@ -2126,15 +2534,36 @@
         .container .section .section_two.grid .middle_section .middle_section_container   {
             margin: -5% 0%;
             padding: 0;
-            height: 100%;
+            height: auto;
         }
 
+        .container .section .section_two.grid .left_section .left_section_container .gallery_container .gallery .gallery_img {
+            height: 70px;
+            width: 70px;
+            display: block;
+            margin: 5px;
+        }
   
     
         .container .section .section_two.grid .left_section .left_section_container .gallery_container .galleryfive .gallery_img {
-            height: 8px;
-            width: 8px;
+            height: 70px;
+            width: 70px;
             display: block;
+            margin: 5px;
+        }
+
+        .container .section .section_two.grid .left_section .left_section_container .gallery_container .gallerysix .gallery_img {
+            height: 70px;
+            width: 70px;
+            display: block;
+            margin: 5px;
+        }
+
+        .container .section .section_two .left_section .left_section_container .gallery_container .gallerythree .gallery_img {
+            height: 70px;
+            width: 70px;
+            display: block;
+            margin: 5px;
         }
 
         .container .section .section_two.grid .middle_section .middle_section_container {
@@ -2142,4 +2571,172 @@
             padding: 0 5%;
             margin: 0;
         }
+
+        /* ======== Project : A Where ness || Section One Flip ========= */
+        .container .section .section_one.flip .left_section .left_section_container .project_img_desc p{
+            font-size: 100%;
+            width: 100%;
+            padding: 0;
+        }
+
+        .container .section .section_one.flip .left_section .left_section_container .project_img_desc{
+            padding: 0% 5%;
+            height: 100%;
+            display: block;
+        }
+
+
+           /* =========== Project: Ticklish Fruits Section Two Three =========== */
+
+    .container .section .section_two.three .right_section .right_section_container .portrait_section{
+        width: 100%;
+        height: 100%;
+        padding: 0% 5%;
+        margin: 10% 0%;
+    }
+
+ 
+    .container .section .section_two.three .middle_section .middle_section_container.three .gallery_container .gallery_img{
+        width: 70px;
+        height: 70px;
+        margin: 5px;
+        padding: 0;
+    }
+
+
+
+      /* =========== Project : Fcil Espresso Bar || Section Four || Landscape, Portfrait Img ======== */
+
+      .container .section .section_three{
+        /* margin-top: 240%; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .container .section .section_three .right_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0%;
+        margin: 10% 0;
+        height: 100%;
+    }
+    .container .section .section_three .right_section .right_section_container .full_img{
+        height: auto;
+        width: 100%;
+        padding: 5%;
+    }
+
+
+     
+    .container .section .section_three .left_section{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        margin-top: 0%;
+        margin-bottom: 10%;
+        /* padding-left: 10%; */
+    }
+    .container .section .section_three .left_section .left_section_container .project_details{
+        padding: 0% 5%;
+        margin-bottom: 5%;
+    }
+    
+
+    .container .section .section_three .left_section .left_section_container .project_details .project_category{
+        font-size: 70%;
+        
+     }
+     .container .section .section_three .left_section .left_section_container .project_details .project_title{
+         font-size: 200%;
+     }
+     .container .section .section_three .left_section .left_section_container .project_details .project_desc{
+         font-size: 80%;
+         margin: 0;
+     }
+     .container .section .section_three .left_section .left_section_container .project_details p{
+        font-size: 200%;
+        width: 100%;
+    }
+
+     .container .section .section_three .left_section .left_section_container .project_image{
+        padding: 0px 5%;
+        margin: 0;
+    }
+
+    .container .section .section_three .middle_section {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10%;
+    }
+    .container .section .section_three .middle_section .middle_section_container{
+        width: 100%;
+        height: 100%;
+    }
+
+    .container .section .section_three .middle_section .middle_section_container .gallery_container .galleryeight{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        /* margin: 10px; */
+    }
+    .container .section .section_three .middle_section .middle_section_container .gallery_container .galleryeight .gallery_img{
+        margin: 5px;
+        width: 70px;
+        height: 70px;
+    }
+
+       /* ====== Project: India International ====== */
+   .container .section .section_two.grid .right_section .right_section_container .landscape_image{
+    width: 400px;
+    height: 100%;
+    padding: 10%;
+}
+
+.container .section .section_two.grid .left_section .left_section_container .gallery_container .galleryseven .gallery_img {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+}
+
+         /* ========= CONTACT SECTION ============ */
+
+.container .section .contact_container h1{
+    font-size: 200%;
+}
+.container .section .contact_container h2{
+    font-size: 150%;
+}
+.container .section .contact_container .website{
+    font-size: 100%;
+}
+.container .section .contact_container p{
+    font-size: 80%;
+}
+    
+.container .section .contact_container .call svg{
+    width: 0.5rem;
+    height: 0.5rem;
+    margin: 0 1%;
+    margin-top: 5px;
+}
+
+.container .section .contact_container .social_media_icons a svg {
+    color: #505050;
+    border: 2px solid #505050;
+    padding: 4px;
+    border-radius: .4rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+
+
 }
